@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="document.getElementById('My Image') .src= 'pic_bulbon.gif'">on</button>
+
+  <img id="My Image" >
+
+<button onclick="document.getElementById('My Image') .src= 'pic_bulboff.gif'">off</button>
+
+<p id="size">javascript can change the style of an HTML element.</p>
+
+<button type="button" onclick="size()">Cilck Me</button>
+
+
+<button onclick="Test(3,4)">Cilck to call the function</button>
+
+</body>
+<script>
+  function Test(a,b) {
+    alert(a+b);
+  }
+  function size() {
+    document.getElementById('size').style.fontSize='30px'
+  }
+  
+</script>
+</html>

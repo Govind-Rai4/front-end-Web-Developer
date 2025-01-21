@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<body id="body">
+
+  <img id="My Image" >
+
+  <style>
+    #marq{
+        display: none;
+    }
+    #h1{
+        display: block;
+    }
+</style>
+<button onclick="document.getElementById('My Image').src = 'phool.jpg'">On</button>
+<button onclick="document.getElementById('My Image').src = 'Thar_bird.jpg'">Off</button>
+<p id="size">JavaScript can change the style of an HTML element.</p>
+<button type="button" onclick="size()">Click Me</button>
+<button onclick="Test(3,4)">Click to call the function</button>
+<button type="button" onclick="red()">Red</button>
+<button type="button" onclick="green()">Green</button>
+<button type="button" onclick="marquee()">Left to right</button>
+<marquee width="1000px" height="100px" direction="Left" id="marq">Hello World</marquee>
+<h1 id="h1">Heading</h1>
+
+</body>
+
+<script>
+  function Test(a, b) {
+    alert(a + b);
+  }
+
+  function size() {
+    document.getElementById('size').style.fontSize = '30px';
+  }
+
+  function red() {
+    document.getElementById('body').style.background = 'red';
+  }
+
+  function green() {
+    document.getElementById('body').style.background = 'green';
+  }
+
+  function marquee() {
+    document.getElementById('marq').style.display = 'block';
+  }
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <button onclick="Test(8,5)">Neg</button>
+    <button onclick="multi(5,5)">multi</button>
+    <button onclick="plus(5,8)">Sum</button>
+    
+</body>
+<p id="demo"> </p>
+<p id="sub"> </p>
+<p id="multip"> </p>
+<script>
+var x = 5;
+var y = 7;
+var sum = x + y;
+document.getElementById('demo').innerHTML = "The value of sum is: " + sum;
+
+
+    function Test(a , b){
+        alert(a-b);
+    }
+    function multi(a,b){
+        alert(a*b);
+    }
+    function plus(a,b){
+        alert(a+b);
+    }
+  
+</script>
+</html>
